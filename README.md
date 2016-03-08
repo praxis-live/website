@@ -6,7 +6,7 @@ It is originally derived from the [Grayscale](http://startbootstrap.com/template
 
 ## Copyright and License
 
-Copyright 2015-16 Neil C Smith
-Copyright 2013-15 Iron Summit Media Strategies, LLC.
+ - Copyright 2015-16 Neil C Smith
+ - Copyright 2013-15 Iron Summit Media Strategies, LLC.
 
 Code (_not content!_) released under the [Apache 2.0](LICENSE) license.
