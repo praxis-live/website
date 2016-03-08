@@ -1,0 +1,15 @@
+/* line 3, /home/nsigma/Code/java/praxis/website/less/mixins.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/mixins\.less}line{font-family:\000033}}
+.element-invisible {
+  border: 0;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+}

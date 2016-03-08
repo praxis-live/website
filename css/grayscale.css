@@ -1,0 +1,448 @@
+/* line 3, /home/nsigma/Code/java/praxis/website/less/mixins.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/mixins\.less}line{font-family:\000033}}
+.element-invisible {
+  border: 0;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+}
+/* line 4, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\000034}}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #bbb;
+  background-color: black;
+}
+/* line 12, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\0000312}}
+html {
+  width: 100%;
+  height: 100%;
+}
+/* line 17, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\0000317}}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 35px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: white;
+}
+/* line 30, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\0000330}}
+h1,
+h2 {
+  text-transform: uppercase;
+}
+/* line 35, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\0000335}}
+p {
+  margin: 0 0 25px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  /* line 39, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\0000339}}
+  p {
+    margin: 0 0 35px;
+    line-height: 1.6;
+  }
+}
+/* line 46, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\0000346}}
+a {
+  color: #5d8eff;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+/* line 51, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\0000351}}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #c3d5ff;
+}
+/* line 58, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\0000358}}
+code {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 63, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\0000363}}
+.light {
+  font-weight: 400;
+}
+/* line 67, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\0000367}}
+.navbar-custom {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: black;
+}
+/* line 73, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\0000373}}
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+  height: 64px;
+  padding: 0;
+}
+/* line 77, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\0000377}}
+.navbar-custom .navbar-brand:focus {
+  outline: none;
+}
+/* line 80, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\0000380}}
+.navbar-custom .navbar-brand .navbar-toggle {
+  padding: 4px 6px;
+  font-size: 16px;
+  color: white;
+}
+/* line 84, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\0000384}}
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+  outline: none;
+}
+/* line 90, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\0000390}}
+.navbar-custom a {
+  color: white;
+}
+/* line 93, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\0000393}}
+.navbar-custom .github-link {
+  display: none;
+}
+/* line 98, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\0000398}}
+.navbar-custom .nav li a {
+  line-height: 64px;
+  padding: 0 15px;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+/* line 104, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003104}}
+.navbar-custom .nav li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  outline: none;
+  background-color: transparent;
+}
+/* line 109, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003109}}
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+  outline: none;
+  background-color: transparent;
+}
+/* line 115, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003115}}
+.navbar-custom .nav li.active {
+  outline: none;
+}
+/* line 117, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003117}}
+.navbar-custom .nav li.active a {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+/* line 119, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003119}}
+.navbar-custom .nav li.active a:hover {
+  color: white;
+}
+@media (min-width: 768px) {
+  /* line 126, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003126}}
+  .navbar-custom {
+    padding: 10px 0;
+    border-bottom: none;
+    letter-spacing: 1px;
+    background: black;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  }
+  /* line 127, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003127}}
+  .navbar-custom .github-link {
+    display: inline;
+  }
+  /* line 137, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003137}}
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    background: black;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+/* line 145, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003145}}
+.hero {
+  display: table;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: white;
+  background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+/* line 157, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003157}}
+.hero .hero-body {
+  display: table-cell;
+  vertical-align: bottom;
+}
+/* line 162, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003162}}
+.hero .intro {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* line 167, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003167}}
+.hero h1 {
+  border: 0;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+}
+/* line 171, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003171}}
+.hero .intro-primary {
+  font-size: 18px;
+}
+/* line 175, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003175}}
+.hero .intro-secondary {
+  display: none;
+}
+@media (min-width: 768px) {
+  /* line 179, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003179}}
+  .hero {
+    height: 100%;
+    padding: 0;
+    background: url(../img/intro-bg.jpg) no-repeat bottom center fixed;
+  }
+  /* line 184, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003184}}
+  .hero .intro {
+    padding-bottom: 50px;
+  }
+  /* line 188, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003188}}
+  .hero .intro-primary {
+    font-size: 26px;
+  }
+  /* line 192, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003192}}
+  .hero .intro-secondary {
+    font-size: 16px;
+    font-style: italic;
+    display: inherit;
+  }
+}
+/* line 201, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003201}}
+.btn-circle {
+  width: 70px;
+  height: 70px;
+  margin-top: 15px;
+  padding: 7px 16px;
+  border: 2px solid white;
+  border-radius: 100% !important;
+  font-size: 40px;
+  color: white;
+  background: transparent;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+/* line 214, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003214}}
+.btn-circle:hover,
+.btn-circle:focus {
+  outline: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+/* line 223, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003223}}
+.content-section {
+  padding: 100px 0;
+  min-height: 100%;
+}
+@media (min-width: 767px) {
+  /* line 229, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+  @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003229}}
+  .content-section {
+    padding: 150px 0;
+  }
+}
+/* line 235, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003235}}
+.features-body .fa {
+  display: block;
+  padding-bottom: 10px;
+}
+/* line 239, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003239}}
+.features-body .feature:nth-child(odd) {
+  clear: both;
+}
+/* line 244, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003244}}
+.download-section {
+  color: white;
+  background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+/* line 254, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003254}}
+.contact-section {
+  min-height: 85%;
+}
+/* line 256, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003256}}
+.contact-section iframe.twitter-timeline {
+  min-height: 450px;
+  max-width: 100%;
+}
+/* line 260, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003260}}
+.contact-section .ham-me-please {
+  border: 0;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+}
+/* line 265, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003265}}
+.btn {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0;
+}
+/* line 275, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003275}}
+.btn-default {
+  border: 1px solid #5d8eff;
+  color: #5d8eff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 279, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003279}}
+.btn-default:hover,
+.btn-default:focus {
+  border: 1px solid #5d8eff;
+  outline: none;
+  color: black;
+  background-color: #5d8eff;
+}
+/* line 288, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003288}}
+ul.banner-social-buttons,
+ul.download-buttons {
+  margin-top: 0px;
+  list-style: outside none none;
+  padding-left: 0px;
+}
+/* line 293, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003293}}
+ul.banner-social-buttons li,
+ul.download-buttons li {
+  display: block;
+  margin-bottom: 20px;
+}
+/* line 296, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003296}}
+ul.banner-social-buttons li:last-child,
+ul.download-buttons li:last-child {
+  margin-bottom: 0;
+}
+/* line 303, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003303}}
+footer {
+  padding: 50px 0;
+}
+/* line 305, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003305}}
+footer p {
+  margin: 0;
+  font-size: 12px;
+}
+/* line 311, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003311}}
+::-moz-selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+}
+/* line 317, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003317}}
+::selection {
+  text-shadow: none;
+  background: #fcfcfc;
+  background: rgba(255, 255, 255, 0.2);
+}
+/* line 323, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003323}}
+img::selection {
+  background: transparent;
+}
+/* line 327, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003327}}
+img::-moz-selection {
+  background: transparent;
+}
+/* line 331, /home/nsigma/Code/java/praxis/website/less/grayscale.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/nsigma\/Code\/java\/praxis\/website\/less\/grayscale\.less}line{font-family:\00003331}}
+body {
+  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
