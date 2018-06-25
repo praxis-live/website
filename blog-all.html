@@ -1,0 +1,22 @@
+---
+layout: page
+title: "All blog posts"
+permalink: /blog/all/
+---
+
+<section class="all-posts-list">
+  <ul>
+    {% for post in site.posts %}
+    <li>
+      <strong>
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </strong>
+      <span class="post-date">- {{ post.date | date_to_long_string }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="rss">
+  <p class="rss-subscribe text">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</section>

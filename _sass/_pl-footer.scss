@@ -1,0 +1,98 @@
+/*
+*	Footer
+*/
+.site-footer {
+  $link-color: $white;
+  padding: 1em 1em 2em 1em;
+  border-top: 1px solid $dark-gray;
+  background-color: $black;
+  color: $white;
+  a {
+    transition: none;
+    text-decoration: underline;
+    color: $link-color;
+    &:active,
+      &:focus,
+      &:hover {
+      text-decoration: none;
+    }
+    &:active,
+      &:focus {
+      outline: none;
+    }
+  }
+  .wrapper {
+    @include outer-container;
+  }
+  .footer-heading {
+
+  }
+  /*
+  *	Site Navigation (left)
+  */
+  .site-navigation {
+    @include span-columns(12);
+    @include media ($mobile) {
+      @include span-columns(6);
+    }
+    @include media ($tablet) {
+      @include span-columns(4);
+    }
+    font-size: 0.9em;
+    ul {
+      @extend %default-ul;
+    }
+  }
+  /*
+  *	Contact Info (center)
+  */
+  .site-contact {
+    margin-top: 1em;
+    @include span-columns(12);
+    @include media ($mobile) {
+      @include span-columns(6);
+      margin-top: 0;
+      margin-right: 0;
+    }
+    @include media ($tablet) {
+      @include span-columns(4);
+      margin-top: 0;
+    }
+    font-size: 0.9em;
+    i {
+      width: 1.25em;
+      text-align: center;
+    }
+    ul.social-media-list {
+      @extend %default-ul;
+      li {
+        display: inline-block;
+        padding-right: 0.5em;
+      }
+      a.icon {
+        text-decoration: none;
+        &:hover,
+        &:active,
+        &:focus {
+          color: $action-color;
+        }
+      }
+      .username {
+        display: none;
+      }
+    }
+  }
+  /*
+  *	Site Description/Signature (right)
+  */
+  .site-signature {
+    margin-top: 1em;
+    @include span-columns(12);
+    @include media ($tablet) {
+      @include span-columns(4);
+      margin-right: 0;
+      margin-top: 0;
+    }
+    font-size: 0.9em;
+  }
+}

@@ -1,0 +1,5 @@
+{% if include.to %}
+  {% capture year_from %}{{ include.from | date: '%Y' }}{% endcapture %}
+  {% capture year_to %}{{ include.to | date: '%Y' }}{% endcapture %}
+  {% if year_from == year_to %}{{ include.from | date: '%B' }} - {{ include.to | date: '%B %Y' }}{% else %}{{ include.from | date: '%B %Y' }} - {{ include.to | date: '%B %Y' }}{% endif %}
+{% else %}{{ include.from | date: '%B %Y' }}{% endif %}

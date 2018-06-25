@@ -1,296 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+has_cover: true
+---
 
-  <head>
+<header id="content-header">
+  <section id="page-title">
+    <h1>PraxisLIVE</h1>
+    <div class="page-title-info">
+      <h2>hybrid visual live programming</h2>
+      <h3>for creatives, for programmers, for students, for tinkerers</h3>
+      <aside><strong>NEW : </strong> <a href="/core/">PraxisCORE for Java developers</a></aside>
+      <a href="#content" class="btn btn-circle page-scroll">
+        <i class="fa fa-angle-double-down animated"></i>
+      </a>
+    </div>
+  </section>
+</header>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Praxis LIVE - hybrid visual IDE for creative coding">
-    <meta name="author" content="Neil C Smith">
+<section id="content">
+  <section class="intro">
+    <p>...imagine combining the best of Java or Processing with the best of visual node-based systems like Isadora, Quartz Composer or Node-RED;<br>
+      imagine components defined like Processing sketches, so you're never constrained by what comes built-in;<br>
+      imagine forking components or creating new ones <em>all while your project is running</em>...</p>
+  </section>
 
-    <title>Praxis LIVE</title>
+  <section class="features flex-fifty">
+    <div class="feature">
+      <h2 class="icon fa-bolt">Real-time audio / video</h2>
+      <p>Real-time architecture designed with live manipulation of audio &amp; video in mind.
+        Graphics module with integrated support for <a href="https://processing.org/" target="_blank">Processing</a>,
+        <a href="https://gstreamer.freedesktop.org/" target="_blank">GStreamer</a> and OpenGL.
+        Low-latency audio DSP module with optional <a href="http://www.jackaudio.org/" target="_blank">JACK</a> binding.</p>
+    </div>
+    <div class="feature">
+      <h2 class="icon icon-rotate-90 fa-sitemap">Intuitive graphical patching</h2>
+      <p>Patcher-style node editing for fast visual project building. Drag and drop components, 
+        draw in connections. <em>Edit everything live</em> - instant feedback 
+        without interrupting your creative flow.</p>
+    </div>
+    <div class="feature">
+      <h2 class="icon fa-code-fork">Extend at runtime</h2>
+      <p>Fork components on-the-fly, or create new ones from scratch, <em>all without dropping a frame</em>.
+        Integrated live editor and compiler for Java, Processing &amp; OpenGL shaders.
+        Export and share, or import from a growing library.</p>
+    </div>
+    <div class="feature">
+      <h2 class="icon fa-sliders">Custom controllers</h2>
+      <p>Build control panels in the visual GUI editor - widgets automatically configure and sync 
+        themselves to properties. Map MIDI controllers or OSC addresses to any property.</p>
+    </div>
+    <div class="feature">
+      <h2 class="icon fa-child">Physical computing</h2>
+      <p>Simple video components for analysing motion can be used to control other parameters.
+        Use the <a href="http://www.tinkerforge.com/" target="_blank">TinkerForge</a> bindings to access a
+        range of sensors, or control motors, servos &amp; other equipment.</p>
+    </div>
+    <div class="feature">
+      <h2 class="icon fa-cubes">Distributed by design</h2>
+      <p>Built from the ground up for working with multiple pipelines using a distributed architecture.
+        Option to run projects transparently across processes and machines.</p>
+    </div>
+  </section>
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Roboto+Slab:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-  </head>
-
-  <body id="page-top" data-spy="scroll" data-offset="150" data-target=".navbar-fixed-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-            <i class="fa fa-bars"></i>
-          </button>
-          <a class="navbar-brand page-scroll" href="#page-top">
-            <img src="img/praxislive.png" alt="Praxis LIVE logo" />
-          </a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-          <ul class="nav navbar-nav">
-            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-            <li class="hidden">
-              <a href="#page-top"></a>
-            </li>
-            <li>
-              <a class="page-scroll" href="#features">Features</a>
-            </li>
-            <li>
-              <a class="page-scroll" href="#download">Download</a>
-            </li>
-            <li>
-              <a class="page-scroll" href="#contact">Contact</a>
-            </li>
-            <li>
-              <a title="Praxis LIVE on GitHub" class="github-link" target="_blank" href="https://github.com/praxis-live"><i class="fa fa-2x fa-github"></i></a>
-            </li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container -->
-    </nav>
-
-    <!-- Intro Header -->
-    <header class="hero">
-      <div class="hero-body">
-        <div class="intro">
-          <h1 class="brand-heading">Praxis LIVE</h1>
-          <p class="intro-primary">Hybrid visual IDE for live creative coding</p>
-          <p class="intro-secondary">easily create projections, interactive spaces, custom VJ tools, sonic performance instruments, media for theatre;<br>
-            use it as a live digital sketchbook, test out ideas, experiment with code</p>
-          <a href="#features" class="btn btn-circle page-scroll">
-            <i class="fa fa-angle-double-down animated"></i>
-          </a></div>
-      </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="features" class="content-section features-section text-center">
-
-      <div class="features-header container">
-        <div class="col-lg-10 col-lg-offset-1">
-          <h2>Features</h2>  
-          <p>... imagine combining the best of Processing with the best of visual patchers like Isadora or Quartz Composer;
-            imagine components defined like Processing sketches, so you're never constrained by what comes built-in;
-            imagine forking components or creating new ones <em>while your project is running</em> ...</p>
-        </div>
-      </div>
-
-      <div class="features-body container">
-        <div class="feature col-lg-6">
-          <h3>
-            <i class="fa fa-2x fa-bolt"></i>
-            Real-time audio / video</h3>
-          <p>Designed for live manipulation of audio & video. OpenGL graphics pipeline with accelerated video processing.
-            Low-latency audio with optional <a href="http://www.jackaudio.org/" target="_blank">JACK</a> binding.</p>
-        </div>
-        <div class="feature col-lg-6">
-          <h3>
-            <i class="fa fa-2x fa-sitemap fa-rotate-90"></i>
-            Intuitive graphical patching</h3>
-          <p>Patcher-style editing for fast visual project building. Drag and drop components, 
-            draw in connections. Edit everything live - instant feedback 
-            without interrupting your creative flow.</p>
-        </div>
-        <div class="feature col-lg-6">
-          <h3>
-            <i class="fa fa-2x fa-code-fork"></i>
-            Extend at runtime</h3>
-          <p>Fork components on-the-fly, or create new ones from scratch, <em>all without dropping a frame</em>.
-            Integrated editor for Java, <a href="https://processing.org/" target="_blank">Processing</a> & GLSL.
-            Export and share, or import from a growing library.</p>
-        </div>
-        <div class="feature col-lg-6">
-          <h3>
-            <i class="fa fa-2x fa-sliders"></i>
-            Custom controllers</h3>
-          <p>Build control panels in the visual GUI editor - widgets automatically configure and sync 
-            themselves to properties. Map MIDI controllers or OSC addresses to any property.</p>
-        </div>
-        <div class="feature col-lg-6">
-          <h3>
-            <i class="fa fa-2x fa-child"></i>
-            Physical computing</h3>
-          <p>Simple video components for analysing motion can be used to control other parameters.
-            Use the <a href="http://www.tinkerforge.com/" target="_blank">TinkerForge</a> bindings to access a
-            range of sensors, or control motors, servos & other equipment.</p>
-        </div>
-        <div class="feature col-lg-6">
-          <h3>
-            <i class="fa fa-2x fa-cubes"></i>
-            Distributed by design</h3>
-          <p>Built from the ground up for working with multiple media pipelines, using a distributed architecture.
-            Option to run projects transparently across multiple processes or machines.</p>
-        </div>
-      </div>
+  <section class="page-actions">
+    <p><a class="btn icon-inline fa-download" href="/download/">Download</a></p>
+  </section>
 
 
-    </section>
-
-    <!-- Download Section -->
-    <section id="download" class="content-section download-section text-center">
-      <div class="download-header">
-        <h2>Download</h2>
-        <p>
-          <em>Praxis LIVE</em> is <strong>free</strong>, <strong>cross-platform</strong> and <strong>open-source</strong><br>
-          Latest stable version : <code>v4.0.0 (May 14 2018)</code> -
-          <a href="https://github.com/praxis-live/praxis-live/releases" target="_blank">release notes</a> |
-          <a href="https://github.com/praxis-live/praxis-live/blob/master/LICENSE.md" target="_blank">licence (GPLv3)</a><br>
-          Legacy v3 release : <code>v3.5.0 (Jan 24 2018)</code> - <a href="https://github.com/praxis-live/praxis-live/releases/tag/v3.5.0"
-                                                                   target="_blank">information</a>
-        </p>
-      </div>
-      <div class="container download-body">
-        <div class="row">
-          <div class="col-lg-4 col-lg-offset-1">
-            <h3>Installers</h3>
-            <ul class="list-unstyled download-buttons">
-              <li>
-                <a href="https://github.com/praxis-live/praxis-live/releases/download/v4.0.0/PraxisLIVE-4.0.0-Windows.exe"
-                   class="btn btn-default btn-lg"><i class="fa fa-windows"></i> Windows installer (.exe)</a> 
-              </li>
-              <li>
-                <a href="https://github.com/praxis-live/praxis-live/releases/download/v4.0.0/PraxisLIVE-4.0.0-macOS.zip"
-                   class="btn btn-default btn-lg"><i class="fa fa-apple"></i> OSX bundle (.app)</a> 
-              </li>
-              <li>
-                <a href="https://github.com/praxis-live/praxis-live/releases/download/v4.0.0/praxis-live_4.0.0-1_all.deb"
-                   class="btn btn-default btn-lg"><i class="fa fa-linux"></i> Linux package (.deb)</a> 
-              </li>
-              <li>
-                <a href="https://github.com/praxis-live/praxis-live/releases/download/v4.0.0/PraxisLIVE-4.0.0.zip"
-                   class="">Cross-platform zip bundle <i class="fa fa-file-zip-o"></i></a>
-                <br><em class="text-muted">Installation is recommended.</em>
-              </li>
-            </ul>
-            <p>
-              <a href="http://praxis-live.readthedocs.io/en/latest/installation/" target="_blank">
-                Instructions and system requirements.</a><br>
-              <a href="https://github.com/praxis-live/support/issues" target="_blank">
-                Report issues or request features.</a>
-            </p>
-          </div>
-          <div class="col-lg-4 col-lg-offset-2">
-            <h3>Documentation</h3>
-            <p>
-              <a href="http://praxis-live.readthedocs.io" target="_blank">Online manual</a> |
-              <a href="https://github.com/praxis-live/support/blob/master/docs/index.md" target="_blank">Browse repository</a>
-            </p>
-            <h3>Examples</h3>
-            <p>
-              <a href="https://github.com/praxis-live/examples/archive/master.zip">Download</a> | 
-              <a href="https://github.com/praxis-live/examples" target="_blank">Browse repository</a>
-            </p>
-            <h3>Additional components</h3>
-            <p>
-              <a href="https://github.com/praxis-live/pxg/archive/master.zip">Download</a> | 
-              <a href="https://github.com/praxis-live/pxg" target="_blank">Browse repository</a>
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="content-section text-center contact-section">
-      <div class="container contact-header">
-        <h2>Contact</h2>
-      </div>
-      <div class="contact-body container">
-        <div class="row">
-          <div class="col-lg-6">
-            <p>For help and support on using <em>Praxis LIVE</em> please make use of the mailing list hosted at
-              <a href="http://groups.google.com/d/forum/praxis-live" target="_blank">http://groups.google.com/d/forum/praxis-live</a>
-            </p>
-            <p>
-              For any other query, please email support<span class="ham-me-please">BACON</span>@<span class="ham-me-please">JAM</span>praxislive.org
-            </p>
-            <ul class="banner-social-buttons">
-              <!--                            <li>
-                                              <a href="https://twitter.com/PraxisLIVE" title="@PraxisLIVE" target="_blank" class="btn btn-default btn-lg">
-                                                  <i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                                          </li>-->
-              <li>
-                <a href="https://www.facebook.com/praxislive.org/" title="Praxis LIVE on Facebook" target="_blank" class="btn btn-default btn-lg">
-                  <i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-              </li>
-              <li>
-                <a href="https://www.youtube.com/channel/UCUOsodT0LkvxEOY6n4k5SPA" target="_blank" class="btn btn-default btn-lg">
-                  <i class="fa fa-youtube-play fa-fw"></i> <span class="network-name">YouTube</span></a>
-              </li>
-              <li>
-                <a href="https://github.com/praxis-live" title="Praxis LIVE on GitHub" target="_blank" class="btn btn-default btn-lg">
-                  <i class="fa fa-github fa-fw"></i> <span class="network-name">GitHub</span></a>
-              </li>
-              <li>
-                <a href="https://praxisintermedia.wordpress.com/" title="Praxis LIVE development blog" target="_blank" class="btn btn-default btn-lg">
-                  <i class="fa fa-wordpress fa-fw"></i> <span class="network-name">WordPress</span></a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-6">
-
-            <a class="twitter-timeline"  href="https://twitter.com/PraxisLIVE" data-widget-id="342670973423726593">Tweets by @PraxisLIVE</a>
-            <script>!function (d, s, id) {
-                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                if (!d.getElementById(id)) {
-                  js = d.createElement(s);
-                  js.id = id;
-                  js.src = p + "://platform.twitter.com/widgets.js";
-                  fjs.parentNode.insertBefore(js, fjs);
-                }
-              }(document, "script", "twitter-wjs");</script>                   
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Footer -->
-    <footer>
-      <div class="container text-center">
-        <p>Copyright &copy; <a href="http://neilcsmith.net">Neil C Smith</a> 2018
-          <br>theme derived from Grayscale by <a href="http://startbootstrap.com/">Start Bootstrap</a>
-        </p>
-      </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
-
-  </body>
-
-</html>
+</section>

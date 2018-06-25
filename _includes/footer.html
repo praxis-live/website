@@ -1,0 +1,50 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <div class="site-navigation">
+
+      <p><strong>Links</strong></p>
+      <ul class="pages">
+        <li class="nav-link"><a href="/community/">Help &amp; support</a></li>
+        <li class="nav-link"><a href="https://docs.praxislive.org" target="_blank">Documentation</a></li>
+        <li class="nav-link"><a href="https://github.com/praxis-live/support/issues" target="_blank">Report issue</a></li>
+        <li class="nav-link"><a href="https://github.com/praxis-live/praxis" target="_blank">Source code (PraxisCORE)</a></li>
+        <li class="nav-link"><a href="https://github.com/praxis-live/praxis-live" target="_blank">Source code (PraxisLIVE)</a></li>
+      </ul>
+    </div>
+
+    <div class="site-contact">
+
+      <p><strong>Contact</strong></p>
+
+      <ul class="social-media-list">
+        <li>
+          <a class="icon fa-envelope-o" href="mailto:{{ site.email }}" title="{{ site.email }}">
+            <span class="username">{{ site.email }}</span>
+          </a>
+        </li>
+        {% for social in site.social %}
+        {% if social.url != null %}
+        <li>
+          <a class="icon fa-{{ social.icon }}" href="{{ social.url }}" title="{{ social.desc }}" target="_blank">
+            <span class="username">{% if social.username %}{{ social.username }}{% else %}{{ social.name }}{% endif %}</span>
+          </a>
+        </li>
+        {% endif %}
+        {% endfor %}
+
+      </ul>
+    </div>
+
+    <div class="site-signature">
+      <p><strong>About</strong></p>
+      <p class="text">PraxisLIVE is a FLOSS project developed and led by UK Artist &amp; Technologist
+        <a href="https://www.neilcsmith.net" target="_blank">Neil C Smith</a>.</p>
+      <p>&copy; 2018</p>
+    </div>
+
+  </div>
+
+</footer>
+

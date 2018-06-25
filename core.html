@@ -1,0 +1,74 @@
+---
+layout: page
+title: "PraxisCORE"
+permalink: /core/
+---
+
+<section class="intro">
+  <h2>Write Now, Run Anytime</h2>
+  <p>PraxisCORE is a modular JVM runtime for cyberphysical programming, supporting
+    real-time coding of real-time systems. It is the heart of PraxisLIVE.
+    With a distributed forest-of-actors architecture,
+    runtime code changes and comprehensive introspection, PraxisCORE brings aspects
+    of Erlang, Smalltalk and Extempore into the Java world ... a powerful platform for 
+    media processing, data visualisation, sensors, robotics, IoT, and lots more!
+  </p>
+</section>
+<section class="page-actions">
+  <p><a class="btn icon-inline fa-download" href="/download/">Download</a>
+    <a class="btn icon-inline fa-github" target="_blank" href="https://github.com/praxis-live/praxis">Source code</a>
+    <a class="btn icon-inline fa-envelope" target="_blank" href="mailto:support@praxislive.org">Ask a question</a></p>
+</section>
+<section class="features">
+  <section class="feature">
+    <h2 class="icon fa-project-diagram">A forest of actors</h2>
+    <p>PraxisCORE is based on the actor model, adapted to the needs of real-time media and data processing.
+      Components (actors) exist in an unlimited number of trees, communicating via asynchronous 
+      lock-free messages. In addition, PraxisCORE supports lightweight synchronous
+      dataflow between siblings for real-time data processing. Each tree root handles message dispatch and scheduling.
+    </p>
+  </section>
+  <section class="feature">
+    <h2 class="">Real-time code changes</h2>
+    <p>PraxisCORE is designed <em>from the ground up</em> to support runtime code changes. Asynchronous code
+      compilation and introspection, with carefully designed state retention,
+      allows for behaviour to be swapped atomically into a running system without
+      pauses or "glitches". PraxisCORE treats code as data, allowing for powerful
+      real-time meta-programming capabilities.
+    </p>
+  </section>
+  <section class="feature">
+    <h2 class="">Distributed by design</h2>
+    <p>Trees can be easily distributed across multiple processes or a network without 
+      code changes. Service discovery and resource loading are integrated into the runtime.
+      Timing sensitive tasks can be run in separate VM's with optimum memory configuration.
+      Projects on small devices (like the Pi) can be developed remotely or run in a
+      cluster.
+    </p>
+  </section>
+  <section class="feature">
+    <h2 class="">Modular runtime</h2>
+    <p>PraxisCORE is highly modular - use just the core actor system, or
+      bring in as many modules from the standard PraxisLIVE distribution as you need.
+      Available pre-existing modules include support for audio and video processing,
+      live data visualisation, working with
+      <a href="https://www.tinkerforge.com" target="_blank">TinkerForge</a> sensors
+      and electronics, and controlling projects via custom GUIs, MIDI and OSC.
+    </p>
+    <p>Individual components can be easily exported in plain text, shared and
+      reused across projects. A growing library of pre-built custom components is
+      available to use, alongside those which ship with the runtime.
+    </p>
+  </section>
+  <section class="feature">
+    <h2 class="">Powerful IDE</h2>
+    <p>While PraxisCORE is a Java API, the recommended
+      way to build projects is inside PraxisLIVE. Built on top of the
+      <a href="https://netbeans.apache.org" target="_blank">Apache NetBeans IDE</a>,
+      the PraxisLIVE IDE inherits world-class code editing functionality. On top of that
+      it provides live visualisation and editing of actor graphs; and live introspection
+      and editing of properties.
+    </p>
+  </section>
+
+</section>

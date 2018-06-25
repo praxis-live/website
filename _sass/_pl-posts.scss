@@ -1,0 +1,124 @@
+
+/*
+*	Posts
+*/
+.blog-post {
+  ul {
+    margin-bottom: 1em;
+  }
+  .post-header-container {
+    .scrim {
+      padding: 2em 1em 1em 1em;
+    }
+  }
+  .post-meta {
+    padding-bottom: 1em;
+  }
+  .post-content {
+    padding: 1em 0;
+  }
+  .tags {
+    font-size: 0.9em;
+  }
+  .rss {
+    margin: 1em 0 0 0;
+    @include span-columns(12);
+    @include media ($tablet) {
+      margin: 1em 0;
+      @include span-columns(6);
+    }
+  }
+  .share {
+    font-weight: bold;
+    margin: 0 0 1em 0;
+    @include span-columns(12);
+    @include media ($tablet) {
+      @include span-columns(6);
+      margin: 1em 0;
+      text-align: right;
+    }
+    a {
+      width: 1em;
+      padding: 0 0.25em;
+      text-decoration: none;
+    }
+  }
+  .post-navigation {
+    font-size: 0.9em;
+    display: block;
+    width: auto;
+    .prev-post {
+      display: block;
+      width: 50%;
+      float: left;
+      margin: 1em 0;
+    }
+    .next-post {
+      display: block;
+      width: 50%;
+      float: left;
+      margin: 1em 0;
+      text-align: right;
+    }
+  }
+}
+
+
+.posts-list {
+  box-sizing: border-box;
+  max-width: 100%;
+  a {
+    height: 100%;
+    display: block;
+    @include clearfix;
+    padding: 1em;
+    transition: background-color 0.5s ease;
+    color: $base-font-color;
+    &:hover, &:focus {
+      color: $base-font-color;
+      text-decoration: none;
+      background-color: $medium-gray;
+    }
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+  .post-date {
+    font-family: $heading-font-family;
+    text-transform: uppercase;
+    text-align: right;
+    color: $light-gray;
+    font-size: 0.9em;
+  }
+  .post-image {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    &.empty {
+      background-image: url("/assets/icons/ms-icon-310x310.png");
+      background-size: cover;
+      background-position: 50%;
+      min-height: 180px;
+    }
+  }
+}
+
+.blog .rss {
+  margin: 1em 0 0 0;
+}
+
+@include media($mobile) {
+  .posts-list {
+    @include display(flex);
+    @include flex-wrap(wrap);
+    .post {
+      width: 50%;
+    }
+  }
+}
+
+@include media($tablet) {
+  .posts-list .post {
+    width: 33%;
+  }
+}
