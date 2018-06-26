@@ -24,7 +24,7 @@ permalink: /blog/:title/
 
 # Image CDN
 imagecdn:
-  #production: "https://images.weserv.nl?url=ssl:www.neilcsmith.net"
+  production: "https://images.weserv.nl?url=ssl:www.praxislive.org"
             
 
 # Google analytics
