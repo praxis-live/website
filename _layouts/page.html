@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<header id="content-header">
+  <section id="page-title">
+    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+  </section>
+</header>
+
+<section id="content">
+  {{ content }}
+</section>

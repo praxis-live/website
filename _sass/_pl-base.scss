@@ -1,0 +1,243 @@
+
+/*
+*	Globals
+*/
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* sticky footer from https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/ */
+
+html {
+  height: 100%;
+  background-color: $base-background-color;
+}
+
+body {
+  min-height: 100%;
+  @include display(flex);
+  @include flex-direction(column);
+  font-size: $base-font-size * 0.9;
+  @include media ($mobile) {
+    font-size: $base-font-size * 1.1;
+  }
+}
+
+.navigation, .site-footer {
+  @include flex(none);
+}
+
+main {
+  display: block;
+  @include flex(1 0 auto);
+}
+
+ol.default, ol.list-unstyled {
+  @extend %default-ol;
+}
+
+ul.default, ul.list-unstyled {
+  @extend %default-ul;
+}
+
+code {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0 3px;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+/*
+*	Body
+*/
+#content-header {
+  @include outer-container;
+}
+
+#content {
+  @include outer-container;
+  padding: 1em;
+}
+/*
+*	index.html
+*/
+.post-list {
+  padding-top: 1em !important;
+  @extend %default-ul;
+}
+.post-meta {
+  @include outer-container;
+  padding: 0 1em;
+  color: $base-font-muted-color;
+  .post-date {
+    @include span-columns(6);
+    text-align: left;
+    font-size: 0.9em;
+  }
+  .post-categories {
+    @include span-columns(6);
+    margin-right: 0;
+    text-align: right;
+    font-size: 0.9em;
+  }
+}
+.pagination {
+  padding-top: 2em;
+  text-align: center;
+  color: $medium-gray;
+  .page-number {
+    padding: 0 1em;
+  }
+}
+.site-header-container {
+  color: $white;
+  background-color: $highlight-color;
+  .site-header{
+    .title {
+      font-size: modular-scale(6);
+    }
+    .subtitle {
+      font-size: modular-scale(1);
+    }
+  }
+}
+img {
+  max-width: 100%;
+}
+
+/* Lightbox font size fix */
+.lb-data .lb-number {
+  font-size: inherit;
+}
+
+
+/*
+ * Page headers / cover images
+ */
+
+#content-header {
+  padding: 0;
+}
+
+#page-title {
+  padding-top: 6em;
+  h1, p {
+    @include outer-container;
+    padding: 0 20px;
+    margin-bottom: 0;
+    color: $white;
+    font-weight: normal;
+  }
+  h1 {
+    /*        font-size: 1.4em;
+            @include media($mobile) {
+                font-size: 2em;
+            }*/
+  }
+  p {
+    font-size: 1.2em;
+    padding-bottom: 0.6em;
+  }
+}
+.has-cover {
+
+  #content-header {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    position: relative;
+    height: 60vh;
+    background-position: 50% 40%;
+    background-size: cover;
+    @include media($tablet) {
+      background-attachment: fixed;
+      height: 80vh;
+    }
+  }
+
+  #page-title {
+    width: 100%;
+    padding-top: 0;
+    position: absolute;
+    bottom: 0;
+    h1, p {
+      background-color: rgba($black, 0.75);
+    }
+  }
+
+}
+
+.flex-fifty {
+  @include media($mobile) {
+    @include display(flex);
+    @include flex-wrap(wrap);
+    div {
+      width: 50%;
+    }
+  }
+}
+
+.feature {
+  text-align: center;
+  padding: 1em;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.2rem;
+  padding: 0.4em 1em;
+  margin: 0.5em 1em;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  border: 1px solid $action-color;
+  text-decoration: none;
+  transition: all $animation-time ease-in-out;
+  &:hover, &:focus {
+    text-decoration: none;
+    color: $black;
+    background-color: $action-color;
+  }
+}
+
+.page-actions {
+  text-align: center;
+  margin-top: 4em;
+  margin-bottom: 4em;
+}
+
+.icon::before {
+  display: block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 2em;
+  text-rendering: auto;
+  /*  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;*/
+}
+
+.icon-inline::before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 1em;
+  padding-right: 0.5em;
+  text-rendering: auto;
+  /*  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;*/
+}
+
+.icon-rotate-90::before {
+  transform: rotate(90deg);
+}
+
+
+
+

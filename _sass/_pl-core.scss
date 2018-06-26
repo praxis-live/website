@@ -1,0 +1,42 @@
+.core {
+  background-image: url("/assets/core-bg-sm.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 90%;
+  @include media($tablet) {
+    background-attachment: fixed;
+    background-image: url("/assets/core-bg.jpg");
+  }
+
+  main {
+    @include outer-container;
+    width: 100%;
+    background-color: rgba($black, 0.7);
+    text-align: center;
+  }
+
+
+  .intro {
+    p {
+      font-style: italic;
+    }
+    @include media($tablet) {
+      padding-left: 4em;
+      padding-right: 4em;
+    }
+  }
+
+  .features {
+    margin-bottom: 4em;
+  }
+
+  .page-actions {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  h1, h2 {
+    text-align: center;
+  }
+
+}

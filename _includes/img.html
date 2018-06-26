@@ -1,0 +1,1 @@
+{% capture src %}{% include imgpath.html %}{% endcapture %}<img src="{{ src | escape }}" alt="{{include.alt}}" {% if include.width %}width="{{include.width}}" {% endif %}{% if include.height %}{% unless site.imagecdn[jekyll.environment] %}height="{{include.height}}" {% endunless %}{% endif %}/>

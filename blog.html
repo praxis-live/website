@@ -1,0 +1,32 @@
+---
+layout: page
+title: "Blog"
+permalink: /blog/
+---
+
+<section class="posts-list">
+  {% for post in site.posts limit: 6 %}
+  <section class="post">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+      <h2 class="post-title">{{ post.title }}</h2>
+      <div class="post-date">{{ post.date | date_to_long_string }}</div>
+
+      {% if post.main_image_path %}
+      <div class="post-image">
+        {% include img.html src=post.main_image_path width=360 height=180 %}
+      </div>
+      {% else %}
+      <div class="post-image empty"></div>
+      {% endif %}
+
+      {% if post.description %}
+      <div class="post-description">{{ post.description }}</div>
+      {% endif %}
+    </a>
+  </section>
+  {% endfor %}
+</section>
+
+<section class="rss">
+  <p class="rss-subscribe text">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</section>
