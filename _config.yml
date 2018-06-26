@@ -14,7 +14,7 @@ description: hybrid visual live programming - for creatives, for programmers, fo
 # root of your server.
 baseurl: ""
 # the base hostname & protocol for your site
-#url: "http://www.example.com"
+url: "https://www.praxislive.org"
 logo: "/assets/logo.png"
 email: support@praxislive.org
 
