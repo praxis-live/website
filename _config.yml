@@ -1,8 +1,15 @@
 # External gems
 plugins:
 
+include:
+  - "/_redirects"
+
 exclude:
   - "/vendor/"
+  - "/Gemfile"
+  - "/Gemfile.lock"
+  - "/LICENSE"
+  - "/README.md"
 
 # Site settings
 title: PraxisLIVE
