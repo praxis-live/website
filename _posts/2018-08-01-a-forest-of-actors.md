@@ -20,7 +20,7 @@ Working with different media in this way is analogous to working with [threads](
 
 ### Time waits for nothing
 
-There's a great article by Ross Bencina (author of [AudioMulch](http://www.audiomulch.com/)) called [Real-time audio programming 101: time waits for nothing](http://www.rossbencina.com/code/real-time-audio-programming-101-time-waits-for-nothing) (link currently down). It discusses in some detail the reason not to use mutexes and other common threading constructs when programming real-time audio. I'd consider it a _must-read_ for anyone doing audio coding, and useful for anyone working with real-time requirements.
+There's a great article by Ross Bencina (author of [AudioMulch](http://www.audiomulch.com/)) called [Real-time audio programming 101: time waits for nothing](http://www.rossbencina.com/code/real-time-audio-programming-101-time-waits-for-nothing). It discusses in some detail the reason not to use mutexes and other common threading constructs when programming real-time audio. I'd consider it a _must-read_ for anyone doing audio coding, and useful for anyone working with real-time requirements.
 
 Remember _your media thread is for processing media_! You need to be aware of all the code that is running in that thread, and the maximum _potential_ execution time of that code, to ensure your data is processed in time. If you start adding in locks, then besides the overhead of synchronization and putting your code at the mercy of the scheduler, you add in the possibility of contention with other code that is now _effectively running in your real-time thread_ but might not be able to meet your real-time deadlines.
 
