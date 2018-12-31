@@ -81,6 +81,7 @@
     }
   }
   h2 {
+    font-size: 1.5em;
     margin-bottom: 0;
   }
   .post-date {
@@ -113,6 +114,7 @@
     @include flex-wrap(wrap);
     .post {
       width: 50%;
+      min-width: 370px;
     }
   }
 }
@@ -120,5 +122,6 @@
 @include media($tablet) {
   .posts-list .post {
     width: 33%;
+    min-width: 370px;
   }
 }
