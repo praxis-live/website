@@ -1,5 +1,5 @@
 # External gems
-plugins:
+# plugins:
 
 include:
   - "/_redirects"

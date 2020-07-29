@@ -1,8 +1,9 @@
 # Compiled site
 _site
 
-# Sass garbage
-.sass-cache
+# Caches
+.sass-cache/
+.jekyll-cache/
 
 # Bundler
 Gemfile.lock
