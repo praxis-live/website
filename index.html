@@ -8,10 +8,9 @@ has_cover: true
     <h1>PraxisLIVE</h1>
     <div class="page-title-info">
       <h2>hybrid visual live programming</h2>
-      <h3>for creatives, for programmers, for students, for tinkerers</h3>
+      <h3>rethinking general purpose and creative coding</h3>
       <aside><strong>NEW : </strong>
-        <a target="_blank" href="https://github.com/praxis-live/praxis-live/releases/tag/v5.0.0-beta-2">
-          Try a beta version of PraxisLIVE v5</a></aside>
+        <a href="/download">PraxisLIVE v5 now available!</a></aside>
       <a href="#content" class="btn btn-circle page-scroll">
         <i class="fa fa-angle-double-down animated"></i>
       </a>
@@ -21,46 +20,36 @@ has_cover: true
 
 <section id="content">
   <section class="intro">
-    <p>...imagine combining the best of Java or Processing with the best of visual node-based systems like Isadora, Quartz Composer or Node-RED;<br>
-      imagine components defined like Processing sketches, so you're never constrained by what comes built-in;<br>
+    <p>...imagine combining the best of Java or Processing with the best of visual node-based systems like Node-RED;<br>
+      imagine components defined as code fragments, so you're never constrained by what comes built-in;<br>
       imagine forking components or creating new ones <em>all while your project is running</em>...</p>
   </section>
 
   <section class="features flex-fifty">
     <div class="feature">
-      <h2 class="icon fa-bolt">Real-time audio / video</h2>
-      <p>Real-time architecture designed with live manipulation of audio &amp; video in mind.
-        Graphics module with integrated support for <a href="https://processing.org/" target="_blank">Processing</a>,
+      <h2 class="icon fa-bolt">Real-time processing</h2>
+      <p><a href="/blog/a-forest-of-actors/">Forest-of-actors</a> architecture for 
+        low-latency, data, media &amp; embedded. Optional graphics module with support
+        for <a href="https://processing.org/" target="_blank">Processing</a>,
         <a href="https://gstreamer.freedesktop.org/" target="_blank">GStreamer</a> and OpenGL.
-        Low-latency audio DSP module with optional <a href="http://www.jackaudio.org/" target="_blank">JACK</a> binding.</p>
+        Optional audio with <a href="http://jaudiolibs.org" target="_blank">Pipes</a>
+        and <a href="http://www.jackaudio.org/" target="_blank">JACK</a>.</p>
     </div>
     <div class="feature">
       <h2 class="icon icon-rotate-90 fa-sitemap">Intuitive graphical patching</h2>
-      <p>Patcher-style node editing for fast visual project building. Drag and drop components, 
-        draw in connections. <em>Edit everything live</em> - instant feedback 
-        without interrupting your creative flow.</p>
+      <p>Node-based actor graph editing for fast visual project building. Drag &amp;
+        drop components, draw in connections. <em>Edit everything live</em> - instant
+        feedback without interrupting flow.</p>
     </div>
     <div class="feature">
       <h2 class="icon fa-code-fork">Extend at runtime</h2>
-      <p>Fork components on-the-fly, or create new ones from scratch, <em>all without dropping a frame</em>.
-        Integrated live editor and compiler for Java, Processing &amp; OpenGL shaders.
-        Export and share, or import from a growing library.</p>
-    </div>
-    <div class="feature">
-      <h2 class="icon fa-sliders">Custom controllers</h2>
-      <p>Build control panels in the visual GUI editor - widgets automatically configure and sync 
-        themselves to properties. Map MIDI controllers or OSC addresses to any property.</p>
-    </div>
-    <div class="feature">
-      <h2 class="icon fa-child">Physical computing</h2>
-      <p>Simple video components for analysing motion can be used to control other parameters.
-        Use the <a href="http://www.tinkerforge.com/" target="_blank">TinkerForge</a> bindings to access a
-        range of sensors, or control motors, servos &amp; other equipment.</p>
+      <p>Fork components on-the-fly, or create new ones from scratch, <em>with real-time code reload</em>.
+        Integrated live Java editor and compiler. Export and share, or import from a growing library.</p>
     </div>
     <div class="feature">
       <h2 class="icon fa-cubes">Distributed by design</h2>
       <p>Built from the ground up for working with multiple pipelines using a distributed architecture.
-        Option to run projects transparently across processes and machines.</p>
+        Option to run projects transparently across processes or machines.</p>
     </div>
   </section>
 
