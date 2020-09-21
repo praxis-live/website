@@ -6,12 +6,17 @@
     padding: 0;
     position: relative;
     height: 100vh;
-    background-position: 50% 50%;
-    background-size: cover;
-    background-image: url("/assets/praxislive4-sm.jpg");
-    @include media($tablet) {
+    background-position: 40% 50%;
+    background-size: auto 85%;
+    background-image: url("/assets/PraxisLIVEv5-sm.jpg");
+    background-repeat: no-repeat;
+    @include media($mobile) {
+      background-position: 50%;
       background-attachment: fixed;
-      background-image: url("/assets/praxislive4.jpg");
+      background-image: url("/assets/PraxisLIVEv5.jpg");
+    }
+    @include media($tablet) {
+      background-position: 50%;
     }
   }
 
