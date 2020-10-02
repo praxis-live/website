@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "PraxisCORE / PraxisLIVE version 5"
+title:  "PraxisCORE / PraxisLIVE v5"
 author: Neil C Smith
 main_image_path: "/assets/pl5vector.jpg"
 description: PraxisLIVE and PraxisCORE version 5 released

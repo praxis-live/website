@@ -71,20 +71,11 @@ blockquote {
   @extend %default-ul;
 }
 .post-meta {
-  @include outer-container;
-  padding: 0 1em;
-  color: $base-font-muted-color;
-  .post-date {
-    @include span-columns(6);
-    text-align: left;
-    font-size: 0.9em;
-  }
-  .post-categories {
-    @include span-columns(6);
-    margin-right: 0;
-    text-align: right;
-    font-size: 0.9em;
-  }
+  font-family: $heading-font-family;
+  text-transform: uppercase;
+  text-align: right;
+  color: $light-gray;
+  font-size: 0.9em;
 }
 .pagination {
   padding-top: 2em;
