@@ -15,7 +15,7 @@ exclude:
 title: PraxisLIVE
 #subtitle: hybrid visual IDE for creative coding
 #name: PraxisLIVE
-description: hybrid visual live programming - for creatives, for programmers, for students, for tinkerers
+description: hybrid visual live programming - rethinking general purpose and creative coding
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
