@@ -6,7 +6,8 @@ _site
 .jekyll-cache/
 
 # Bundler
-Gemfile.lock
 .bundle/
 vendor/
+
+# IDE
 nbproject/
