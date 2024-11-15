@@ -15,21 +15,20 @@
   
   .site-title {
     float: left;
-    color: $white;
-    text-decoration: none;
-    height: 4em;
-    /*margin-right: 4em;*/
-/*    @include media ($tablet) {
-      padding-left: $em-base;
-    }*/
-    padding-left: 42px;
-    background-image: url("/assets/icons/favicon-32x32.png");
-    background-position: center left;
-    background-repeat: no-repeat;
-    &:active,
-      &:focus,
-      &:hover {
-      color: darken($link-color, 15%);
+    h1 {
+        color: $white;
+        text-decoration: none;
+        padding-left: 42px;
+        padding-right: 1em;
+        margin: 0;
+        background-image: url("/assets/icons/favicon-32x32.png");
+        background-position: center left;
+        background-repeat: no-repeat;
+        &:active,
+          &:focus,
+          &:hover {
+          color: darken($link-color, 15%);
+        }
     }
   }
   
