@@ -31,12 +31,7 @@ permalink: /blog/:title/
 
 # Image CDN
 imagecdn:
-  production: "https://images.weserv.nl?url=ssl:www.praxislive.org"
-            
-
-# Google analytics
-# ga_tracking_id: "UA-XXXX-1"
-
+  production: "https://praxislive-org.netlify.app/.netlify/images?url="
 
 # Social icons and sharing options
 #
@@ -119,9 +114,8 @@ social:
 
 # Social sharing protocols
 # These are for automatically generating sharing metadata for FB and Twitter
-# OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
 protocols:
-    fb_image: "/assets/praxislive4.jpg"
+    fb_image: "/assets/PraxisLIVEv600.jpg"
 
-    twitter_image: "/assets/praxislive4.jpg"
+    twitter_image: "/assets/PraxisLIVEv600.jpg"
 

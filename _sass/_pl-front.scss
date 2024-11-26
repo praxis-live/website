@@ -6,22 +6,21 @@
     padding: 0;
     position: relative;
     height: 100vh;
-    background-position: 40% 50%;
-    background-size: auto 85%;
-    background-image: url("/assets/PraxisLIVEv5-sm.jpg");
+    background-position: 50% 0%;
+    background-size: auto;
+    background-image: url("/assets/PraxisLIVEv600-sm.jpg");
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #000;
     @include media($mobile) {
-      background-position: 50%;
-      background-attachment: fixed;
-      background-image: url("/assets/PraxisLIVEv5.jpg");
-    }
-    @include media($tablet) {
-      background-position: 50%;
+      background-position: 50% 100%;
+      background-size: cover;
+      background-image: url("/assets/PraxisLIVEv600.jpg");
     }
   }
 
   #page-title {
-    background-color: rgba($black, 0.75);
+    background-color: rgba($black, 0.65);
     width: 100%;
     padding: 2em;
     position: absolute;
@@ -31,25 +30,30 @@
       font-style: italic;
     }
 
-    
-    h1, aside {
+    h1 {
+      display: none;
+    }
+
+    aside {
       display: none;
       @include media($mobile) {
         display: block;
       }
     }
   }
-  
+
   #content {
     padding-top: 3rem;
     .intro {
       text-align: center;
-      font-style: italic;
+      p{
+        font-style: italic;
+      }
       em {
         font-weight: bold;
       }
     }
-    
+
   }
 
   .btn-circle {
@@ -68,6 +72,6 @@
       background: rgba($white, 0.4);
     }
 
-  } 
+  }
 
 }
