@@ -49,13 +49,6 @@ imagecdn:
 #     desc: Follow me on Twitter            # Description to display as link title, etc
 #     share: true                           # Include in the "Share" section of posts
 social:
-  - name: Twitter
-    icon: twitter
-    username: PraxisLIVE
-    url: https://twitter.com/praxislive
-    desc: Follow us on Twitter
-    share: true
-
   - name: Facebook
     icon: facebook
     username: PraxisLIVE
