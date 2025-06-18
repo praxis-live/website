@@ -38,7 +38,7 @@ using OPENRNDR 0.4.4 for now, due to another issue with the latest alphas.
 
 The first file in the project is the
 [project.pxp](https://github.com/codelerity/pl-openrndr/blob/main/OPENRNDR/project.pxp)
-file. In the IDE, this project is edited via the project properties. There are two
+file. In the IDE, this file is edited via the project properties. There are two
 key changes for the hub and libraries. The hub definition is changed to load all
 roots in a separate JVM launched with the same necessary Java options for the
 OpenGL support as in the built-in Processing (`root:video`) support.
@@ -238,7 +238,7 @@ Kotlin's `Unit.INSTANCE`.
 
 Currently I'm looking at stabilising some aspects of this and then adding it to
 the standard available project templates. In many ways, custom integrations like
-this, doing more within projects while keeping the core lightweight is the future
+this, doing more within projects while keeping the core lightweight, is the future
 direction of PraxisLIVE.
 
 I'm also looking at a different custom library integration with
